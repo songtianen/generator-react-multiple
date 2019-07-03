@@ -5,6 +5,11 @@
   "repository": "git@github.com:songtianen/generator-react-multiple.git",
   "author": "song <songten@icloud.com>",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "scripts": {
     "test": "jest --notify --watchman=false --detectOpenHandles",
     "lint": "eslint --ext .jsx --ext .js ./",
